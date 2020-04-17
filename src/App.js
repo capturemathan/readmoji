@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import './App.css'
+import loadimg from './loadimg.png'
 
 class App extends Component {
   state = {
-    data: {}
+    data: {},
+    loaded: false
   }
 
   componentDidMount(){
@@ -12,18 +14,21 @@ class App extends Component {
       .then(result => result.json())
       .then(result => {
         this.setState({
-          data:result
+          data: result,
+          loaded: true
         })
       })
   }
 
   render() {
     const { data } = this.state
+    const { loaded } = this.state
+    if(loaded){
     return (
       <>
 
   <h1 className="has-text-centered" id="headertext">Readmoji</h1>
-  <div className="has-text-centered" id="subtext"><span class="tag is-link" id="emojitext">Add emotion to your README's</span>&nbsp;<span class="tag is-success" id="emojitext">Sorted by Alphabetical Order</span>&nbsp;<span class="tag is-danger" id="emojitext">Click to copy Emoji Codes</span>&nbsp;<span class="tag is-warning" id="emojitext">Powered by Github API</span></div>
+  <div className="has-text-centered" id="subtext"><span class="tag is-link" id="emojitext">Add emotion to your README's</span>&nbsp;<span class="tag is-danger" id="emojitext">Copy Emoji Codes :smile:</span>&nbsp;<span class="tag is-success" id="emojitext">Sorted by Alphabetical Order</span>&nbsp;<span class="tag is-warning" id="emojitext">Powered by Github API</span></div>
 
   <div class="columns is-multiline is-centered">
     {
@@ -49,7 +54,19 @@ class App extends Component {
   </footer>
 </>
     )
+  }else{
+    return( 
+        <section id="heroid" class="hero is-fullheight is-hcentered is-vcentered">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <img src={loadimg} alt="Loading" height="500" width="500"/>
+                    <p id="loadtext">Loading your emojis</p>
+                </div>
+            </div>
+        </section>
+    )
   }
+}
 }
 
 export default App

@@ -21,6 +21,10 @@ body{
     margin: 10px;
 }
 
+#loadtext{
+    font-family: Pacifico; color: black; font-size: 1.3em;
+}
+
 #footertext{
     font-size: 1.3em;
     font-family: Pacifico;
