@@ -2,22 +2,42 @@ import React, { Component } from 'react'
 import './App.css'
 
 class App extends Component {
+  state = {
+    data: {}
+  }
+
+  componentDidMount(){
+    const url="https://api.github.com/emojis"
+    fetch(url)
+      .then(result => result.json())
+      .then(result => {
+        this.setState({
+          data:result
+        })
+      })
+  }
+
   render() {
+    const { data } = this.state
     return (
       <>
 
   <h1 className="has-text-centered" id="headertext">Readmoji</h1>
-  <div className="has-text-centered" id="subtext"><span class="tag is-link" id="emojitext">Emoji Guide for README's</span></div>
+  <div className="has-text-centered" id="subtext"><span class="tag is-link" id="emojitext">Add emotion to your README's</span>&nbsp;<span class="tag is-success" id="emojitext">Sorted by Alphabetical Order</span>&nbsp;<span class="tag is-danger" id="emojitext">Click to copy Emoji Codes</span>&nbsp;<span class="tag is-warning" id="emojitext">Powered by Github API</span></div>
 
   <div class="columns is-multiline is-centered">
-    <div class="column is-narrow has-text-centered">
-      <div class="box">
-        <figure class="image container is-64x64 ">
-          <img class="is-rounded" src="https://github.githubassets.com/images/icons/emoji/bowtie.png?v8" alt="emoji"/>
-        </figure>
-        <span class="tag is-success" id="emojitext">:bowtie:</span>
-      </div>
-    </div>
+    {
+      Object.keys(data).map((key, index) =>(
+        <div className="column is-narrow has-text-centered">
+          <div className="box">
+            <figure className="image container is-64x64 ">
+              <img src={data[key]} alt={key}/>
+            </figure>
+      <span className="tag is-dark" id="emojitext">:{key}:</span>
+          </div>
+        </div>
+      ))
+    }
   </div>
 
   <footer className="footer">
