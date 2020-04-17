@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/readmoji/static/css/main.5b14ee1e.chunk.css",
+    "main.js": "/readmoji/static/js/main.51664cc8.chunk.js",
+    "main.js.map": "/readmoji/static/js/main.51664cc8.chunk.js.map",
+    "runtime-main.js": "/readmoji/static/js/runtime-main.d85dab41.js",
+    "runtime-main.js.map": "/readmoji/static/js/runtime-main.d85dab41.js.map",
+    "static/js/2.73c05a30.chunk.js": "/readmoji/static/js/2.73c05a30.chunk.js",
+    "static/js/2.73c05a30.chunk.js.map": "/readmoji/static/js/2.73c05a30.chunk.js.map",
+    "index.html": "/readmoji/index.html",
+    "precache-manifest.6ced13cad897e0d4c8bfe55ef4c156d1.js": "/readmoji/precache-manifest.6ced13cad897e0d4c8bfe55ef4c156d1.js",
+    "service-worker.js": "/readmoji/service-worker.js",
+    "static/css/main.5b14ee1e.chunk.css.map": "/readmoji/static/css/main.5b14ee1e.chunk.css.map",
+    "static/js/2.73c05a30.chunk.js.LICENSE.txt": "/readmoji/static/js/2.73c05a30.chunk.js.LICENSE.txt",
+    "static/media/loadimg.png": "/readmoji/static/media/loadimg.8ad80587.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d85dab41.js",
+    "static/js/2.73c05a30.chunk.js",
+    "static/css/main.5b14ee1e.chunk.css",
+    "static/js/main.51664cc8.chunk.js"
+  ]
+}
