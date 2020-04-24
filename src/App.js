@@ -15,14 +15,21 @@ class App extends Component {
       .then(result => {
         this.setState({
           data: result,
-          loaded: true
+          loaded: true,
+          selectedCard: null,
+          emojiText: null
         })
       })
+  }
+
+  onCardSelect(key){
+    this.setState({selectedCard:key})
   }
 
   render() {
     const { data } = this.state
     const { loaded } = this.state
+    const { selectedCard } = this.state
     if(loaded){
     return (
       <>
@@ -30,12 +37,23 @@ class App extends Component {
   <h1 className="has-text-centered" id="headertext">Readmoji</h1>
   <div className="has-text-centered" id="subtext"><span class="tag is-link" id="emojitext">Add emotion to your README's</span>&nbsp;<span class="tag is-danger" id="emojitext">Copy Emoji Codes :smile:</span>&nbsp;<span class="tag is-success" id="emojitext">Sorted by Alphabetical Order</span>&nbsp;<span class="tag is-warning" id="emojitext">Powered by Github API</span></div>
 
+    <div className="column is-3">
+      { selectedCard &&
+      <article class="message is-small is-success">
+      <div class="message-header">
+        <p>Readmoji says</p>
+      </div>
+      <div class="message-body">
+        Your emoji {selectedCard} has been copied.
+      </div>
+      </article> }
+    </div>
   <div class="columns is-multiline is-centered">
     {
       Object.keys(data).map((key, index) =>(
         <div className="column is-narrow has-text-centered">
           <div className="box">
-            <figure className="image container is-64x64 ">
+            <figure className="image container is-64x64 " onClick={()=>this.onCardSelect(key)}>
               <img src={data[key]} alt={key}/>
             </figure>
       <span className="tag is-dark" id="emojitext">:{key}:</span>
