@@ -23,7 +23,11 @@ class App extends Component {
   }
 
   onCardSelect(key){
-    this.setState({selectedCard:key})
+    navigator.clipboard.writeText(":"+key+":");
+    this.setState({selectedCard:key});
+    alert(
+      "Your emoji has been copied 🥳"
+    )
   }
 
   render() {
@@ -37,17 +41,6 @@ class App extends Component {
   <h1 className="has-text-centered" id="headertext">Readmoji</h1>
   <div className="has-text-centered" id="subtext"><span class="tag is-link" id="emojitext">Add emotion to your README's</span>&nbsp;<span class="tag is-danger" id="emojitext">Copy Emoji Codes :smile:</span>&nbsp;<span class="tag is-success" id="emojitext">Sorted by Alphabetical Order</span>&nbsp;<span class="tag is-warning" id="emojitext">Powered by Github API</span></div>
 
-    <div className="column is-3">
-      { selectedCard &&
-      <article class="message is-small is-success">
-      <div class="message-header">
-        <p>Readmoji says</p>
-      </div>
-      <div class="message-body">
-        Your emoji {selectedCard} has been copied.
-      </div>
-      </article> }
-    </div>
   <div class="columns is-multiline is-centered">
     {
       Object.keys(data).map((key, index) =>(
@@ -70,6 +63,7 @@ class App extends Component {
         </p>
     </div>
   </footer>
+
 </>
     )
   }else{
