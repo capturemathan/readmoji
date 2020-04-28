@@ -1,14 +1,12 @@
-# Readmoji :genie:
-`Emoji Guide for README's`
+# Readmoji :bowtie:
+`Emoji Guide for README's, First Experimentation with REACT`
 
 ![Readmoji](https://github.com/capturemathan/readmoji/blob/master/readmojibanner.jpg?raw=true)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### `Local Setup`
+1. git clone `https://github.com/capturemathan/readmoji.git`
+2. cd readmoji
+3. npm install
+4. npm start
