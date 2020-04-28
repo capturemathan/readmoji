@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "566bb76cd6fe0bbf5f358941c385f5a7",
+    "revision": "a920e489fa6d54874a539cfd1d5c0c0a",
     "url": "/readmoji/index.html"
   },
   {
-    "revision": "91b587ce2bbbf7892ee3",
+    "revision": "3d4f083f10a5451ab839",
     "url": "/readmoji/static/css/main.5b14ee1e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/readmoji/static/js/2.73c05a30.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "91b587ce2bbbf7892ee3",
-    "url": "/readmoji/static/js/main.51664cc8.chunk.js"
+    "revision": "3d4f083f10a5451ab839",
+    "url": "/readmoji/static/js/main.2aadb898.chunk.js"
   },
   {
     "revision": "764e275afb3c53a94e4d",
