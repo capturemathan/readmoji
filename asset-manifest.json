@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/readmoji/static/css/main.5b14ee1e.chunk.css",
-    "main.js": "/readmoji/static/js/main.2aadb898.chunk.js",
-    "main.js.map": "/readmoji/static/js/main.2aadb898.chunk.js.map",
+    "main.css": "/readmoji/static/css/main.969526fa.chunk.css",
+    "main.js": "/readmoji/static/js/main.fb18d6e2.chunk.js",
+    "main.js.map": "/readmoji/static/js/main.fb18d6e2.chunk.js.map",
     "runtime-main.js": "/readmoji/static/js/runtime-main.d85dab41.js",
     "runtime-main.js.map": "/readmoji/static/js/runtime-main.d85dab41.js.map",
-    "static/js/2.73c05a30.chunk.js": "/readmoji/static/js/2.73c05a30.chunk.js",
-    "static/js/2.73c05a30.chunk.js.map": "/readmoji/static/js/2.73c05a30.chunk.js.map",
+    "static/css/2.f1d36a8f.chunk.css": "/readmoji/static/css/2.f1d36a8f.chunk.css",
+    "static/js/2.99c61de0.chunk.js": "/readmoji/static/js/2.99c61de0.chunk.js",
+    "static/js/2.99c61de0.chunk.js.map": "/readmoji/static/js/2.99c61de0.chunk.js.map",
     "index.html": "/readmoji/index.html",
-    "precache-manifest.d2e248c50a0d977a0e626d8311caf4a7.js": "/readmoji/precache-manifest.d2e248c50a0d977a0e626d8311caf4a7.js",
+    "precache-manifest.e634a76ca4d3b5fe655d1e712f905902.js": "/readmoji/precache-manifest.e634a76ca4d3b5fe655d1e712f905902.js",
     "service-worker.js": "/readmoji/service-worker.js",
-    "static/css/main.5b14ee1e.chunk.css.map": "/readmoji/static/css/main.5b14ee1e.chunk.css.map",
-    "static/js/2.73c05a30.chunk.js.LICENSE.txt": "/readmoji/static/js/2.73c05a30.chunk.js.LICENSE.txt",
+    "static/css/2.f1d36a8f.chunk.css.map": "/readmoji/static/css/2.f1d36a8f.chunk.css.map",
+    "static/css/main.969526fa.chunk.css.map": "/readmoji/static/css/main.969526fa.chunk.css.map",
+    "static/js/2.99c61de0.chunk.js.LICENSE.txt": "/readmoji/static/js/2.99c61de0.chunk.js.LICENSE.txt",
     "static/media/loadimg.png": "/readmoji/static/media/loadimg.8ad80587.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d85dab41.js",
-    "static/js/2.73c05a30.chunk.js",
-    "static/css/main.5b14ee1e.chunk.css",
-    "static/js/main.2aadb898.chunk.js"
+    "static/css/2.f1d36a8f.chunk.css",
+    "static/js/2.99c61de0.chunk.js",
+    "static/css/main.969526fa.chunk.css",
+    "static/js/main.fb18d6e2.chunk.js"
   ]
 }
