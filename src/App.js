@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
+import { toast } from 'react-toastify';
 import './App.css'
+import 'react-toastify/dist/ReactToastify.css';
 import loadimg from './loadimg.png'
+
+toast.configure()
 
 class App extends Component {
   state = {
@@ -25,15 +29,12 @@ class App extends Component {
   onCardSelect(key){
     navigator.clipboard.writeText(":"+key+":");
     this.setState({selectedCard:key});
-    alert(
-      "Your emoji has been copied 🥳"
-    )
+    toast.success( "Your emoji has been copied 🥳",{autoClose: 3000})
   }
 
   render() {
     const { data } = this.state
     const { loaded } = this.state
-    const { selectedCard } = this.state
     if(loaded){
     return (
       <>
