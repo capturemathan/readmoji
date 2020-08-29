@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { toast } from 'react-toastify';
+import LazyLoad from 'react-lazy-load';
 import './App.css'
 import 'react-toastify/dist/ReactToastify.css';
 import loadimg from './loadimg.png'
@@ -48,7 +49,9 @@ class App extends Component {
         <div className="column is-narrow has-text-centered">
           <div className="box">
             <figure className="image container is-64x64 " onClick={()=>this.onCardSelect(key)}>
+            <LazyLoad height={64} width={64}> 
               <img src={data[key]} alt={key}/>
+            </LazyLoad>
             </figure>
       <span className="tag is-dark" id="emojitext">:{key}:</span>
           </div>
